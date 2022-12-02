@@ -1,9 +1,12 @@
 # Development
 
 ### Link to Deployed Website
+
 If you used the stencil code, this is `https://<your GitHub username>.github.io/<name of your repository>`
 
 ### Goal and Value of the Application
+
+    the goal of the application is to be able to keep track of the anime that you have watched.
 
 ### Usability Principles Considered
 
@@ -12,4 +15,3 @@ If you used the stencil code, this is `https://<your GitHub username>.github.io/
 ### How Data is Passed Down Through Components
 
 ### How the User Triggers State Changes
-
