@@ -72,8 +72,18 @@ function App() {
   return (
 
     <div className="App">
-      
       <div>
+      <h1>My Anime List</h1> 
+      </div>
+      <div>
+        <button onClick={() => handleRating()}> Sort By Rating</button>
+      </div>
+
+      <div>
+        <button onClick={() => defaultRating()}> UnSort By Rating</button>
+      </div>
+      <div>
+        <h2>Genre</h2>
       <Nav onSelect={selectGenre}>
         <Nav.Item><Nav.Link eventKey="All">All</Nav.Link></Nav.Item>
         <Nav.Item><Nav.Link eventKey="Romcom">Romcom</Nav.Link></Nav.Item>
@@ -82,6 +92,7 @@ function App() {
       </div>
 
       <div>
+        <h2>Season</h2>
       <Nav onSelect={selectSeason}>
         <Nav.Item><Nav.Link eventKey="All">All</Nav.Link></Nav.Item>
         <Nav.Item><Nav.Link eventKey="Spring">Spring</Nav.Link></Nav.Item>
@@ -89,17 +100,8 @@ function App() {
       </Nav>
       </div>
 
-      <div>
-        <button onClick={() => handleRating()}> Sort By Rating</button>
-      </div>
-
-      <div>
-        <button onClick={() => defaultRating()}> UnSort By Rating</button>
-      </div>
-
-      <div>
-      <h1>My Anime List</h1> 
       
+      <div>
       <h2>Watch List</h2>
       <p>{names}</p>
       <button onClick={() => handleResetFunction()}> Reset Watch List</button>
