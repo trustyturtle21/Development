@@ -72,17 +72,17 @@ function App() {
   return (
 
     <div className="App">
-      <div>
+      <div style="text-align:center;">
       <h1>My Anime List</h1> 
       </div>
-      <div>
+      <div style="text-align:center;">
         <button onClick={() => handleRating()}> Sort By Rating</button>
       </div>
 
-      <div>
+      <div style="text-align:center;">
         <button onClick={() => defaultRating()}> UnSort By Rating</button>
       </div>
-      <div>
+      <div style="text-align:center;">
         <h2>Genre</h2>
       <Nav onSelect={selectGenre}>
         <Nav.Item><Nav.Link eventKey="All">All</Nav.Link></Nav.Item>
@@ -91,7 +91,7 @@ function App() {
       </Nav>
       </div>
 
-      <div>
+      <div style="text-align:center;"> 
         <h2>Season</h2>
       <Nav onSelect={selectSeason}>
         <Nav.Item><Nav.Link eventKey="All">All</Nav.Link></Nav.Item>
@@ -101,7 +101,7 @@ function App() {
       </div>
 
       
-      <div>
+      <div style="text-align:center;">
       <h2>Watch List</h2>
       <p>{names}</p>
       <button onClick={() => handleResetFunction()}> Reset Watch List</button>
